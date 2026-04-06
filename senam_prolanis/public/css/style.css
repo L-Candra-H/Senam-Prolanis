@@ -1,0 +1,198 @@
+/* File: public/css/style.css */
+
+/* Reset & Styling Umum */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container utama */
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Gunakan CSS Grid untuk form input */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Tampilan label yang jelas */
+label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Tombol dengan jarak atas */
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+/* Responsive grid untuk tampilan tabel dan form */
+@media(min-width: 768px) {
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tombol Cetak */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+}
+
+footer {
+    background: #eeeeee;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background: #007bff;
+    border: none;
+}
+
+.btn-success {
+    background: #28a745;
+    border: none;
+}
+
+.table thead {
+    background: #007bff;
+    color: white;
+}
+
+.btn-success:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.hidden {
+    display: none;
+}
+
+#filterTanggal {
+    padding: 6px;
+}
+
+.row.mb-3 {
+    gap: 15px;
+}
+
+@media print {
+    body {
+        font-size: 14px;
+        color: black;
+        background: none;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 5px;
+        border: 1px solid black;
+        text-align: center;
+    }
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#loading-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    /* Mencegah interaksi */
+    transition: opacity 0.5s ease-out;
+}
+
+body {
+    background-image: url('../images/bg-login.png');
+    /* ✅ benar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.login-wrapper {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* transparan */
+    backdrop-filter: blur(6px);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    background-color: #ffffff;
+    /* area login tetap solid */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-open #logoutBtn {
+    display: none !important;
+}
