@@ -3,7 +3,7 @@
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', 'xxx');
 define('DB_NAME', 'senam_prolanis');
 
 function get_db_connection() {
